@@ -13,9 +13,9 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             string file = @"C:\Users\azama\OneDrive\Documents\C#\dars13\first.txt";
-            Console.WriteLine(" 1 You wont creat account");
-            Console.WriteLine(" 2 You wont show users");
-            Console.WriteLine(" 2 You wont delete account");
+            Console.WriteLine(" 1 You wont creat account ");
+            Console.WriteLine(" 2 You wont show users ");
+            Console.WriteLine(" 2 You wont delete account ");
             Console.Write(" : ");
             int choose = int.Parse(Console.ReadLine());
             switch (choose)
@@ -23,8 +23,9 @@ namespace ConsoleApp1
                 case 1: First(file); break;
                 case 2: Sekond(file); break;
                 case 3: Third(file); break;
-                    default: Console.WriteLine(" Don`t have "); ; break;
+                default: Console.WriteLine($" This {choose} don`t have "); ; break;
             }
+
         }
         public static void First(string file)
         {
